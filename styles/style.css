@@ -313,36 +313,44 @@ footer {
     align-items: center;
     padding: 126px;
 }
-footer .nav-icon{
+
+footer .nav-icon {
     margin-bottom: 56px;
 }
-footer h3{
+
+footer h3 {
     color: #FFF;
 }
-footer a{
+
+footer a {
     text-decoration: none;
 }
-.story{
+
+.story {
     display: flex;
     gap: 60px;
     margin-top: 0px;
     margin-bottom: 56px;
 }
-.story a{
+
+.story a {
     color: #FFF;
     font-size: 18px;
     font-weight: 600;
 }
-.sponsor{
+
+.sponsor {
     display: flex;
     gap: 40px;
     margin-top: 0px;
     margin-bottom: 64px;
 }
-.rules{
+
+.rules {
     display: flex;
     gap: 60px;
 }
+
 footer p,
 .rules a {
     color: rgba(255, 255, 255, 0.60);
@@ -350,9 +358,11 @@ footer p,
     font-size: 16px;
     font-weight: 500;
 }
-.hide{
+
+.hide {
     display: none;
 }
+
 /* media query */
 /* small device */
 @media screen and (max-width:576px) {
@@ -485,57 +495,105 @@ footer p,
     .play-games p {
         font-size: 1rem;
     }
+
     /* game list */
-    .game-card{
-        transform: scale(0.38   );
+    .game-card {
+        transform: scale(0.38);
         margin: -30px -90px;
     }
+
     /* footer style */
-    footer{
+    footer {
         padding: 0px;
         padding-top: 100px;
     }
-    .sponsor, .story{
+
+    .sponsor,
+    .story {
         gap: 25px;
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
-    .rules{
+
+    .rules {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         margin-bottom: 75px;
     }
-    .sponsor a, .story a,.rules a, footer p{
+
+    .sponsor a,
+    .story a,
+    .rules a,
+    footer p {
         font-size: smaller;
         align-self: center;
         justify-self: center;
     }
-    footer p{
+
+    footer p {
         width: 258px;
         margin-bottom: 88px;
     }
 }
+
 /* for tablet */
 @media screen and (min-width:576px) and (max-width:992px) {
+
     /* nav style */
-    nav{
+    nav {
         padding: 0px;
         flex-direction: column;
         align-items: center;
         gap: 20px;
         padding-bottom: 10px;
     }
+
     /* goat style */
-    .goat{
+    .goat {
         flex-direction: column;
         align-items: center;
     }
-    .content{
+
+    .content {
         width: 100%;
     }
+
     /* online games */
-    .card-content{
+    .card-content {
         flex-direction: column;
+    }
+
+    /* play games */
+    .one {
+        width: 40%;
+    }
+
+    .play-games {
+        margin: 0px 20px 50px 20px;
+        gap: 60px;
+    }
+
+    .two {
+        top: 4100px;
+        left: 240px;
+    }
+
+    .play-games p,
+    .play-games h3 {
+        width: 100%;
+    }
+
+    .play-games h3 {
+        font-size: xx-large;
+    }
+
+    .play-games p {
+        font-size: small;
+    }
+
+    /* footer */
+    footer p {
+        margin-top: 40px;
     }
 }
